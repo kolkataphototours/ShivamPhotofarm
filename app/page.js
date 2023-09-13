@@ -4,6 +4,7 @@ import Gallery from "@/components/Home/Gallery";
 import { Home } from "@/components/Home/data"
 import Us from "@/components/Home/Us";
 import Videos from "@/components/Home/Videos";
+import About from "@/components/Home/About";
 
 const HomePage = () => {
   return (
@@ -12,6 +13,7 @@ const HomePage = () => {
       <Us/>
       <Videos/>
       <Gallery data={Home.gallery} />
+      <About/>
     </>
   );
 };
