@@ -5,6 +5,7 @@ import { Home } from "@/components/Home/data"
 import Us from "@/components/Home/Us";
 import Videos from "@/components/Home/Videos";
 import About from "@/components/Home/About";
+import Inspiration from "@/components/Home/Inspiration";
 
 const HomePage = () => {
   return (
@@ -14,6 +15,7 @@ const HomePage = () => {
       <Videos/>
       <Gallery data={Home.gallery} />
       <About/>
+      <Inspiration data={Home.carousel}/>
     </>
   );
 };
