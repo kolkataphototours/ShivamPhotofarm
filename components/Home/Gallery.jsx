@@ -53,6 +53,10 @@ const Gallery = ({ data }) => {
           <img src={data[7].url} alt="img" className="h-full w-full" />
         </div>
       </div>
+
+      <div className="w-[88%] md:w-[75%] md:h-screen mt-3">
+        <img src={data[8].url} alt="img" className="h-full w-full" />
+      </div>
     </div>
   );
 };
