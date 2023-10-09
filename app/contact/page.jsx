@@ -1,97 +1,58 @@
 "use client";
-import React, { useState, useRef } from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Contact = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <div className="w-screen pb-4">
+    <div className=" pb-4">
       <div className="w-3/5 flex mx-auto flex-col justify-center items-center mt-16 mb-12">
-        <p
-          style={{
-            fontSize: "15px",
-            fontWeight: 300,
-          }}
-          className="text-base"
-        >
+        <p className="text-base font-light">
           If you are keen to get in touch you can email me at
           <strong> info@jaredbuckley.co.nz</strong> or call me on{" "}
           <strong>0273537849</strong>.
         </p>
-        <p
-          style={{
-            fontSize: "15px",
-            fontWeight: 300,
-          }}
-          className="text-base"
-        >
+        <p className="text-base font-light">
           Otherwise please feel free to fill in the form below.{" "}
         </p>
       </div>
 
       <div className="w-3/4 mx-auto flex flex-col items-end">
         <input
-          style={{
-            borderColor: "black",
-            color: "black",
-            fontSize: "14px",
-            fontWeight: "300",
-          }}
-          className="w-full border border-opacity-50 h-9 p-2 text-base mb-1 focus:border-black focus:outline-none placeholder-black"
+          className="w-full text-black font-light border border-black border-opacity-50 p-2 text-base mb-1 focus:border-black focus:outline-none placeholder-black"
           placeholder="Name *"
           type="text"
           required
         />
         <input
-          style={{
-            borderColor: "black",
-            color: "black",
-            fontSize: "14px",
-            fontWeight: "300",
-          }}
-          className="w-full border border-opacity-50 h-9 p-2 text-base mb-1 focus:border-black focus:outline-none placeholder-black"
+          className="w-full text-black font-light border border-black border-opacity-50 p-2 text-base mb-1 focus:border-black focus:outline-none placeholder-black"
           placeholder="Email *"
           type="email"
           required
         />
         <input
-          style={{
-            borderColor: "black",
-            color: "black",
-            fontWeight: "300",
-            fontSize: "14px",
-          }}
-          className="w-full border border-opacity-50 h-9 p-2 text-base mb-1 focus:border-black focus:outline-none placeholder-black"
+          className="w-full text-black font-light border border-black border-opacity-50 p-2 text-base mb-1 focus:border-black focus:outline-none placeholder-black"
           placeholder="Date(s) *"
           type="text"
           required
         />
         <input
-          style={{
-            borderColor: "black",
-            color: "black",
-            fontSize: "14px",
-            fontWeight: "300",
-          }}
-          className="w-full border border-opacity-50 h-9 p-2 text-base mb-1 focus:border-black focus:outline-none placeholder-black"
+          className="w-full text-black font-light border border-black border-opacity-50 p-2 text-base mb-1 focus:border-black focus:outline-none placeholder-black"
           placeholder="Shoot Type/ Location *"
           type="text"
           required
         />
         <textarea
-          style={{
-            borderColor: "black",
-            color: "black",
-            fontSize: "15px",
-            fontWeight: "300",
-          }}
-          className="w-full border border-opacity-50 p-2 text-base mb-1 focus:border-black focus:outline-none placeholder-black"
+          className="w-full text-black font-light border border-black border-opacity-50 p-2 text-base mb-1 focus:border-black focus:outline-none placeholder-black"
           placeholder="Message"
           type="text"
           rows={5}
         />
-        <button
-          style={{ fontSize: "14px", fontWeight: "300" }}
-          className="bg-black text-white py-1 px-2 h-8 w-12 flex mt-1"
-        >
+        <button className="bg-black text-base font-light text-white py-1 px-2 h-8 w-12 flex mt-1">
           Send
         </button>
       </div>
@@ -103,15 +64,12 @@ const Contact = () => {
         />
       </div>
 
-      <div className="mt-16 w-2/5 h-2/6 mx-auto border-l pl-4 pt-2 pb-4 border-black flex flex-col items-end">
-        <p
-          style={{
-            color: "rgb(24, 40, 47)",
-            fontSize: "15px",
-            fontWeight: "300",
-            lineHeight: "30px",
-          }}
-        >
+      <div
+        data-aos="fade-left"
+        data-aos-duration="400"
+        className="mt-16 w-2/5  h-2/6  mx-auto border-l pl-4 pt-2 pb-4 border-black flex flex-col items-end"
+      >
+        <p className="text-[#18282F] leading-7 font-light text-base">
           “Jared was so easy to communicate with, super easy going and
           accommodating! We had the audio recordings of the ceremony and
           speeches and he made that happen for us, I love listening back these
@@ -127,23 +85,18 @@ const Contact = () => {
         </p>
       </div>
 
-      <div className="mt-2 w-2/5 h-2/6 mx-auto flex flex-col items-end">
-        <p
-          style={{
-            color: "rgb(24, 40, 47)",
-            fontSize: "15px",
-            fontWeight: "300",
-          }}
-        >
+      <div
+        data-aos="fade-left"
+        data-aos-duration="400"
+        className="mt-2 w-2/5 h-2/6 mx-auto flex flex-col items-end"
+      >
+        <p className="text-[#18282F] leading-7 font-light text-base">
           — Shubham
         </p>
       </div>
 
       <div className="mt-16 flex flex-col items-center ">
-        <h2
-          style={{ fontWeight: 300 }}
-          className="text-lg md:text-2xl lg:text-2xl"
-        >
+        <h2 className="text-lg md:text-2xl lg:text-2xl font-light">
           Or Else We Are Quite Active On
         </h2>
         <ul class="flex  mt-5 ">
@@ -177,11 +130,10 @@ const Contact = () => {
         </ul>
       </div>
 
-      <div className="mx-auto w-2/5 mt-4 flex justify-center items-center">
+      <div className="mx-auto w-2/5 font-light mt-4 flex justify-center items-center">
         <p
           style={{
             fontSize: "12px",
-            fontWeight: 300,
           }}
         >
           Creating captivating photography and cinematic videography images

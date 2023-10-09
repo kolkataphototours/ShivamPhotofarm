@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 5px;
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #4a90e2 transparent;
+}
+
 @font-face {
   font-family: "Stegal";
   src: url("/fonts/Stegal-Re.otf") format("opentype");
