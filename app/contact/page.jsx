@@ -135,7 +135,7 @@ const Contact = () => {
             fontWeight: "300",
           }}
         >
-          — Arley
+          — Shubham
         </p>
       </div>
 
