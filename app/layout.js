@@ -8,14 +8,13 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-
   return (
     <html lang="en">
       <body>
         <main className="app">
           <Nav />
           {children}
-          <Footer />
+         
         </main>
         <script
           src="https://kit.fontawesome.com/a31bdd6d95.js"

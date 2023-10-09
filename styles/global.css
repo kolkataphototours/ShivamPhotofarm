@@ -3,19 +3,22 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'Stegal';
-    src: url('/fonts/Stegal-Re.otf') format('opentype');
-  }
-  @font-face {
-    font-family: 'Sang';
-    src: url('/fonts/SangBleuKingdom-Regular.otf') format('opentype');
-  }
-  
-  
-  .font-ste{
-     font-family: 'Stegal',sans-serif;
-  }
-  
-  .font-sang{
-    font-family: 'Sang',sans-serif;
-  }
+  font-family: "Stegal";
+  src: url("/fonts/Stegal-Re.otf") format("opentype");
+}
+@font-face {
+  font-family: "Sang";
+  src: url("/fonts/SangBleuKingdom-Regular.otf") format("opentype");
+}
+
+.font-ste {
+  font-family: "Stegal", sans-serif;
+}
+
+.font-sang {
+  font-family: "Sang", sans-serif;
+}
+
+.placeholder-black::placeholder {
+  color: black;
+}
