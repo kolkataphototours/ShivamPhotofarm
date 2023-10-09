@@ -88,17 +88,19 @@ const Navbar = () => {
                   transition={{ duration: 0.5 }}
                   whileHover={{ scale: 1.1, originX: 0, color: "gray" }}
                   className="md:text-6xl text-white underline underline-offset-8 w-1/2 m-3 font-sang"
+                  onClick={toggleMenu}
                 >
                   Home
                 </motion.ul>
               </Link>
-              <Link href="/works" className="mb-5">
+              <Link href="/works/project" className="mb-5">
                 <motion.ul
                   initial={{ x: "-100vw" }}
                   animate={{ x: 0 }}
                   transition={{ duration: 0.6 }}
                   whileHover={{ scale: 1.1, originX: 0, color: "gray" }}
                   className="md:text-6xl text-white underline underline-offset-8 w-1/2 m-3 font-sang"
+                  onClick={toggleMenu}
                 >
                   Our works
                 </motion.ul>
@@ -110,6 +112,7 @@ const Navbar = () => {
                   transition={{ duration: 0.7 }}
                   whileHover={{ scale: 1.1, originX: 0, color: "gray" }}
                   className="md:text-6xl text-white underline underline-offset-8 w-1/2 m-3 font-sang "
+                  onClick={toggleMenu}
                 >
                   Inspiration
                 </motion.ul>
@@ -121,6 +124,7 @@ const Navbar = () => {
                   transition={{ duration: 0.8 }}
                   whileHover={{ scale: 1.1, originX: 0, color: "gray" }}
                   className="md:text-6xl text-white underline underline-offset-8 w-1/2 m-3 font-sang"
+                  onClick={toggleMenu}
                 >
                   About
                 </motion.ul>
@@ -132,6 +136,7 @@ const Navbar = () => {
                   transition={{ duration: 0.9 }}
                   whileHover={{ scale: 1.1, originX: 0, color: "gray" }}
                   className="md:text-6xl text-white underline underline-offset-8 w-1/2 m-3 font-sang"
+                  onClick={toggleMenu}
                 >
                   Contact
                 </motion.ul>

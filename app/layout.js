@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
         <main className="app">
           <Nav />
           {children}
-         
+          <Footer />
         </main>
         <script
           src="https://kit.fontawesome.com/a31bdd6d95.js"

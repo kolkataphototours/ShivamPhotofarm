@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 
-const Us = ({ heading, data }) => {
+const Portraits = ({ heading, data }) => {
   return (
     <div className="h-96 mt-8">
       <div className=" h-2/3 flex  flex-col justify-center  items-center">
@@ -16,4 +16,4 @@ const Us = ({ heading, data }) => {
   );
 };
 
-export default Us;
+export default Portraits;
