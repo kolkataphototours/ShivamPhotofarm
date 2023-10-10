@@ -1,3 +1,4 @@
+"use client";
 import "../styles/global.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
@@ -18,7 +19,7 @@ export default function RootLayout({ children }) {
         </main>
         <script
           src="https://kit.fontawesome.com/a31bdd6d95.js"
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
         ></script>
       </body>
     </html>
