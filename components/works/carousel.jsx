@@ -33,14 +33,18 @@ const ImageSlider = ({ data }) => {
         slidesPerView={1.1}
         navigation
         loop={true}
-        autoplay={{ delay: 2500 }}
+        autoplay={{ delay: 500000 }}
         style={{ "--swiper-navigation-color": "white" }}
       >
         {data.images.map((img, index) => {
           return (
             <SwiperSlide className="w-full h-full" key={index}>
               <div className="w-full h-full">
-                <img src={img} alt="img" className="w-full h-full" />
+                <img
+                  src={img}
+                  alt="img"
+                  className="w-full h-full"
+                />
               </div>
             </SwiperSlide>
           );

@@ -93,7 +93,7 @@ const Navbar = () => {
                   Home
                 </motion.ul>
               </Link>
-              <Link href="/works/project" className="mb-5">
+              <Link href="/works/portraits" className="mb-5">
                 <motion.ul
                   initial={{ x: "-100vw" }}
                   animate={{ x: 0 }}

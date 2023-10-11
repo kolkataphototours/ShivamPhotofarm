@@ -1,17 +1,38 @@
 "use client";
 import React from "react";
+import { portraitData } from "@/components/works/data";
 
-const Portraits = ({ heading, data }) => {
+const Portraits = () => {
   return (
-    <div className="h-96 mt-8">
-      <div className=" h-2/3 flex  flex-col justify-center  items-center">
-        <p className=" sm:w-3/5 lg:w-2/5  h-max md:h-2/3 p-4 sm:p-8 flex justify-center  items-center text-center bg-neutral-100 rounded-md text-2xl font-semibold">
-          We find the best way to capture the essence of your personalities
-          ensuring that your wedding film is unique and has a natural and
-          spontaneous feel.
-        </p>
-        <p className=" h-1 w-1/4 rounded-md bg-zinc-900 mt-8"></p>
-      </div>
+    <div className="w-screen pt-8">
+      {portraitData.map((data) => {
+        const { images } = data;
+        return (
+          <div className="mt-2">
+            <div className="md:w-[75%] h-[150vh] mx-auto flex flex-row justify-between">
+              <div className="w-[50%] h-full">
+                <img src={images[0]} alt="img" className="m-1 h-[65%] w-full" />
+                <img src={images[1]} alt="img" className="m-1 h-[35%] w-full" />
+              </div>
+              <div className="w-[49.5%] h-full">
+                <img src={images[2]} alt="img" className="m-1 h-[35%] w-full" />
+                <img src={images[3]} alt="img" className="m-1 h-[65%] w-full" />
+              </div>
+            </div>
+
+            <div className="mt-2 md:w-[75%] h-[150vh] mx-auto flex flex-row justify-between">
+              <div className="w-[50%] h-full">
+                <img src={images[4]} alt="img" className="m-1 h-[35%] w-full" />
+                <img src={images[5]} alt="img" className="m-1 h-[65%] w-full" />
+              </div>
+              <div className="w-[49.5%] h-full">
+                <img src={images[6]} alt="img" className="m-1 h-[65%] w-full" />
+                <img src={images[7]} alt="img" className="m-1 h-[35%] w-full" />
+              </div>
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 };
