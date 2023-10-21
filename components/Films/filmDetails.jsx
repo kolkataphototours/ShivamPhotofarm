@@ -24,7 +24,7 @@ const FilmDetails = ({ id }) => {
 
             </div>
            
-            <div class="-mt-20 mb-12 font-thin text-sm leading-6 text-center">
+            <div class="md:-mt-20 mb-12 font-thin text-sm leading-6 text-center">
                 <p><strong>Filmed By -</strong> {details[id].filmBy}</p>
                 <p><strong>Edited By -</strong> {details[id].editedBy}</p>
                 <p><strong>Shot By -</strong> {details[id].shot}</p>
@@ -41,7 +41,7 @@ const FilmDetails = ({ id }) => {
 
             <div className='flex  justify-center'>
                 <div className='w-[1px]  mr-2 bg-black'></div>
-                <div className='w-4/6  text-center leading-8'>{details[id].description}</div>
+                <div className='w-4/5 md:w-4/6  text-center leading-8'>{details[id].description}</div>
 
             </div>
         </div>
