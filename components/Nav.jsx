@@ -52,7 +52,7 @@ const Navbar = () => {
   return (
     <div className="bg-transparent  w-full  text-gray-500 container-fluid ">
       <div className="flex justify-between items-center h-16 ">
-        <h1 className="md:text-3xl text-black md:mx-32 font-semibold font-sang">
+        <h1 className="text-xl md:text-3xl text-black md:mx-32 font-semibold font-sang mx-6">
           Shivam PhotoFarm
         </h1>
 
