@@ -1,10 +1,15 @@
 "use client";
 import React, { useState, useRef } from "react";
+import AboutMain from '../../components/About/AboutMain'
+import Video from "@/components/About/Video";
+import VideoLink from "@/data/About/VideoLink";
 
 const About = () => {
   return (
     <div>
-      <p>About</p>
+
+   <AboutMain/>
+   <Video VideoLink={VideoLink}/>
     </div>
   );
 };
