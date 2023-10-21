@@ -1,9 +1,16 @@
 import React from 'react'
 import details from '@/data/Films/details'
+import Link from 'next/link'
 const FilmDetails = ({ id }) => {
+    const size = details.length;
 
     return (
         <div>
+            <div className='text-center my-8'>
+
+                <h1 className='text-2xl font-semibold'>{details[id].place}</h1>
+                <h1>{details[id].name}</h1>
+            </div>
             <div className="flex  justify-center h-[300px] sm:h-[500px] md:h-screen">
                 <iframe
                     className="w-4/5 h-4/5  rounded-lg"
@@ -16,14 +23,25 @@ const FilmDetails = ({ id }) => {
 
 
             </div>
-            <div className='flex flex-col text-center '>
-
-                <h1>{details[id].place}</h1>
-                <h1>{details[id].name}</h1>
-
+           
+            <div class="-mt-20 mb-12 font-thin text-sm leading-6 text-center">
+                <p><strong>Filmed By -</strong> {details[id].filmBy}</p>
+                <p><strong>Edited By -</strong> {details[id].editedBy}</p>
+                <p><strong>Shot By -</strong> {details[id].shot}</p>
             </div>
-            <div className='border-4 flex justify-center'>
-                <div className='w-3/5 border-4 text-center'>{details[id].text}</div>
+            <div className=' my-12 text-2xl  flex justify-center font-bold text-white '>
+                <Link href={`/films/${(id + 1) / size}`}>
+                    <div className="cursor-pointer w-[115px] rounded-md h-[40px] bg-[black] flex justify-center items-center hover:bg-[#272727]">
+                        <p className="text-white text-sm  font-semibold tracking-wider ">
+                            NEXT FILM
+                        </p>
+                    </div>
+                </Link>
+            </div>
+
+            <div className='flex  justify-center'>
+                <div className='w-[1px]  mr-2 bg-black'></div>
+                <div className='w-4/6  text-center leading-8'>{details[id].description}</div>
 
             </div>
         </div>
