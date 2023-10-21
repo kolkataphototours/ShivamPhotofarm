@@ -30,7 +30,7 @@ const FilmDetails = ({ id }) => {
                 <p><strong>Shot By -</strong> {details[id].shot}</p>
             </div>
             <div className=' my-12 text-2xl  flex justify-center font-bold text-white '>
-                <Link href={`/films/${(id + 1) / size}`}>
+                <Link href={`/films/${id == size - 1 ? 0 : parseInt(id) + 1}`}>
                     <div className="cursor-pointer w-[115px] rounded-md h-[40px] bg-[black] flex justify-center items-center hover:bg-[#272727]">
                         <p className="text-white text-sm  font-semibold tracking-wider ">
                             NEXT FILM
