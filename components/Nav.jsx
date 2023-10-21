@@ -51,7 +51,7 @@ const Navbar = () => {
 
   return (
     <div className="bg-transparent  w-full  text-gray-500 container-fluid ">
-      <div className="flex justify-between items-center mx-4 h-16 ">
+      <div className="flex justify-between items-center h-16 ">
         <h1 className="md:text-3xl text-black md:mx-32 font-semibold font-sang">
           Shivam PhotoFarm
         </h1>
@@ -59,7 +59,7 @@ const Navbar = () => {
         {/* mobile Navbar */}
 
         <div id="mobile">
-          <div onClick={toggleMenu} className="cursor-pointer z-50">
+          <div onClick={toggleMenu} className="cursor-pointer z-50 mx-4">
             <motion.div
               variants={firstLine}
               initial="initial"
@@ -87,7 +87,7 @@ const Navbar = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.35 }}
-              className="h-screen bottom-[1px]  z-10 -mx-5 absolute  w-full bg-opacity-70 backdrop-blur-md backdrop-filter"
+              className="h-screen bottom-[1px] mx-auto w-full z-10 absolute overflow-hidden bg-opacity-70 backdrop-blur-md backdrop-filter"
               style={{
                 backgroundColor: "rgba(0, 0, 0, 0.9)",
               }}
