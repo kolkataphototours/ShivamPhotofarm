@@ -14,6 +14,7 @@
 body {
   scrollbar-width: thin;
   scrollbar-color: #4a90e2 transparent;
+  overflow-x: hidden;
 }
 
 @font-face {
@@ -35,4 +36,22 @@ body {
 
 .placeholder-black::placeholder {
   color: black;
+}
+
+#mobile{
+  display : none;
+  z-index: 1000;
+}
+
+#desktop{
+  display : block;
+}
+
+@media screen and (max-width: 678px){
+   #mobile{
+    display: block;
+   }
+   #desktop{
+    display : none;
+  }
 }
