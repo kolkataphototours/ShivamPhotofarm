@@ -122,6 +122,7 @@ const Navbar = () => {
                     <motion.div
                       onClick={handleToggle}
                       whileHover={{ scale: 1.1, originX: 0, color: "gray" }}
+                      className="z-10"
                     >
                       <span className="text-3xl absolute text-white my-2 font-sang">
                         {toggle1 ? "-" : "+"}
@@ -134,7 +135,7 @@ const Navbar = () => {
                         initial={{ x: "-120vw" }}
                         animate={{ x: 0 }}
                         transition={{ duration: 0.6 }}
-                        className="mb-5"
+                        className="mb-5 z-10"
                       >
                         <Link href="/works/project">
                           <motion.ul
@@ -316,7 +317,7 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/about">
+                    <Link href="/works/travel">
                       <p className="text-black hover:text-gray-400">Travel</p>
                     </Link>
                   </li>
