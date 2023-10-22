@@ -135,7 +135,7 @@ const Navbar = () => {
                         initial={{ x: "-120vw" }}
                         animate={{ x: 0 }}
                         transition={{ duration: 0.6 }}
-                        className="mb-5 z-10"
+                        className="mb-5"
                       >
                         <Link href="/works/project">
                           <motion.ul
