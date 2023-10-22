@@ -8,8 +8,8 @@ const FilmDetails = ({ id }) => {
         <div>
             <div className='text-center my-8'>
 
-                <h1 className='text-2xl font-semibold'>{details[id].place}</h1>
-                <h1>{details[id].name}</h1>
+                <h1 className='text-2xl font-semibold font-sang'>{details[id].place}</h1>
+                <h1 className='font-sang '>{details[id].name}</h1>
             </div>
             <div className="flex  justify-center h-[300px] sm:h-[500px] md:h-screen">
                 <iframe
@@ -24,10 +24,10 @@ const FilmDetails = ({ id }) => {
 
             </div>
            
-            <div class="md:-mt-20 mb-12 font-thin text-sm leading-6 text-center">
-                <p><strong>Filmed By -</strong> {details[id].filmBy}</p>
-                <p><strong>Edited By -</strong> {details[id].editedBy}</p>
-                <p><strong>Shot By -</strong> {details[id].shot}</p>
+            <div class="md:-mt-20 mb-12 font-thin text-sm leading-6 text-center ">
+                <p><strong className='font-ste'>Filmed By -</strong> {details[id].filmBy}</p>
+                <p><strong className='font-ste'>Edited By -</strong> {details[id].editedBy}</p>
+                <p><strong className='font-ste'>Shot By -</strong> {details[id].shot}</p>
             </div>
             <div className=' my-12 text-2xl  flex justify-center font-bold text-white '>
                 <Link href={`/films/${id == size - 1 ? 0 : parseInt(id) + 1}`}>
@@ -41,7 +41,7 @@ const FilmDetails = ({ id }) => {
 
             <div className='flex  justify-center'>
                 <div className='w-[1px]  mr-2 bg-black'></div>
-                <div className='w-4/5 md:w-4/6  text-center leading-8'>{details[id].description}</div>
+                <div className='w-4/5 md:w-4/6  text-center leading-8 font-ste'>{details[id].description}</div>
 
             </div>
         </div>

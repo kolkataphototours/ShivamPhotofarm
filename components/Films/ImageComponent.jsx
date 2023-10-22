@@ -30,7 +30,7 @@ const GlassmorphicImage = ({ index, cla }) => {
       <div class="absolute inset-0"></div>
       <div>
         <p className="flex ">
-          <h1 class=" text-white text-2xl md:text-3xl text-center font-sang  font-bold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+          <h1 class=" text-white text-lg sm:text-xl md:text-2xl font-sang text-center font-sang  font-bold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
             {details[index].place}
             <br />
             {details[index].name}

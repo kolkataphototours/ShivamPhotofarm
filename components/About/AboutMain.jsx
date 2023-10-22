@@ -14,7 +14,7 @@ const AboutMain = () => {
               alt="pic"
             />
           </div>
-          <div className="-mt-12 md:mt-0 flex items-center  lg:col-span-2 lg:order-2">
+          <div className="-mt-12 md:mt-0 flex items-center  lg:col-span-2 lg:order-2 ">
             <div className="flex  w-full mt-0  lg:mt-0 items-center tracking-wide">
               <p className="text-left p-4 h-fit w-full font-sang text-sm font-thin">
                 Hi, I’m Jared a professional photographer, filmmaker, and visual
