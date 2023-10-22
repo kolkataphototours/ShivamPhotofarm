@@ -11,10 +11,10 @@ const Navbar = () => {
 
   const handleToggle = () => {
     setToggle1(!toggle1);
-  }
+  };
   const handleToggle1 = () => {
     setToggle2(!toggle2);
-  }
+  };
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -76,7 +76,9 @@ const Navbar = () => {
               variants={lastLine}
               initial="initial"
               animate={isOpen ? "final" : "initial"}
-              className={`h-1 ${isOpen ? "bg-white" : "bg-black"} w-8 mx-1 z-50`}
+              className={`h-1 ${
+                isOpen ? "bg-white" : "bg-black"
+              } w-8 mx-1 z-50`}
             ></motion.div>
           </div>
         </div>
@@ -107,17 +109,17 @@ const Navbar = () => {
                 </Link>
                 <Link href="" className="mb-5">
                   <div className="flex">
-                  <motion.ul
-                    initial={{ x: "-100vw" }}
-                    animate={{ x: 0 }}
-                    transition={{ duration: 0.6 }}
-                    whileHover={{ scale: 1.1, originX: 0, color: "gray" }}
-                    className="md:text-6xl text-white underline underline-offset-8  m-3 font-sang"
-                    onClick={handleToggle}
-                  >
-                    Photography 
-                  </motion.ul>
-                  <motion.div
+                    <motion.ul
+                      initial={{ x: "-100vw" }}
+                      animate={{ x: 0 }}
+                      transition={{ duration: 0.6 }}
+                      whileHover={{ scale: 1.1, originX: 0, color: "gray" }}
+                      className="md:text-6xl text-white underline underline-offset-8  m-3 font-sang"
+                      onClick={handleToggle}
+                    >
+                      Photography
+                    </motion.ul>
+                    <motion.div
                       onClick={handleToggle}
                       whileHover={{ scale: 1.1, originX: 0, color: "gray" }}
                     >
@@ -136,7 +138,11 @@ const Navbar = () => {
                       >
                         <Link href="/works/project">
                           <motion.ul
-                            whileHover={{ scale: 1.1, originX: 0, color: "gray" }}
+                            whileHover={{
+                              scale: 1.1,
+                              originX: 0,
+                              color: "gray",
+                            }}
                             className="md:text-6xl text-white underline underline-offset-8 w-1/2 m-3 font-sang"
                             onClick={toggleMenu}
                           >
@@ -145,16 +151,24 @@ const Navbar = () => {
                         </Link>
                         <Link href="/works/portraits">
                           <motion.ul
-                            whileHover={{ scale: 1.1, originX: 0, color: "gray" }}
+                            whileHover={{
+                              scale: 1.1,
+                              originX: 0,
+                              color: "gray",
+                            }}
                             className="md:text-6xl text-white underline underline-offset-8 w-1/2 m-3 font-sang"
                             onClick={toggleMenu}
                           >
                             Portraits
                           </motion.ul>
                         </Link>
-                        <Link href="/about">
+                        <Link href="/works/travel">
                           <motion.ul
-                            whileHover={{ scale: 1.1, originX: 0, color: "gray" }}
+                            whileHover={{
+                              scale: 1.1,
+                              originX: 0,
+                              color: "gray",
+                            }}
                             className="md:text-6xl text-white underline underline-offset-8 w-1/2 m-3 font-sang"
                             onClick={toggleMenu}
                           >
@@ -166,18 +180,18 @@ const Navbar = () => {
                   </AnimatePresence>
                 </Link>
                 <Link href="" className="mb-5">
-                <div className="flex">
-                  <motion.ul
-                    initial={{ x: "-100vw" }}
-                    animate={{ x: 0 }}
-                    transition={{ duration: 0.6 }}
-                    whileHover={{ scale: 1.1, originX: 0, color: "gray" }}
-                    className="md:text-6xl text-white underline underline-offset-8  m-3 font-sang"
-                    onClick={handleToggle1}
-                  >
-                    Flims 
-                  </motion.ul>
-                  <motion.div
+                  <div className="flex">
+                    <motion.ul
+                      initial={{ x: "-100vw" }}
+                      animate={{ x: 0 }}
+                      transition={{ duration: 0.6 }}
+                      whileHover={{ scale: 1.1, originX: 0, color: "gray" }}
+                      className="md:text-6xl text-white underline underline-offset-8  m-3 font-sang"
+                      onClick={handleToggle1}
+                    >
+                      Flims
+                    </motion.ul>
+                    <motion.div
                       onClick={handleToggle1}
                       whileHover={{ scale: 1.1, originX: 0, color: "gray" }}
                     >
@@ -196,7 +210,11 @@ const Navbar = () => {
                       >
                         <Link href="/flims">
                           <motion.ul
-                            whileHover={{ scale: 1.1, originX: 0, color: "gray" }}
+                            whileHover={{
+                              scale: 1.1,
+                              originX: 0,
+                              color: "gray",
+                            }}
                             className="md:text-6xl text-white underline underline-offset-8 w-1/2 m-3 font-sang"
                             onClick={toggleMenu}
                           >
@@ -205,7 +223,11 @@ const Navbar = () => {
                         </Link>
                         <Link href="/flims">
                           <motion.ul
-                            whileHover={{ scale: 1.1, originX: 0, color: "gray" }}
+                            whileHover={{
+                              scale: 1.1,
+                              originX: 0,
+                              color: "gray",
+                            }}
                             className="md:text-6xl text-white underline underline-offset-8 w-1/2 m-3 font-sang"
                             onClick={toggleMenu}
                           >
@@ -262,9 +284,7 @@ const Navbar = () => {
       <div id="desktop" className="py-4 border border-x-0 md:mx-36">
         <div className="md:w-3/4 mx-auto flex justify-center items-center">
           <ul className="flex space-x-6 md:space-x-28 ">
-            <motion.div
-
-            >
+            <motion.div>
               <Link href="/">
                 <p className="text-black hover:text-gray-400">Home</p>
               </Link>
@@ -274,27 +294,29 @@ const Navbar = () => {
               onHoverStart={handleToggle}
               onHoverEnd={handleToggle}
             >
-              <Link href=""
-              >
+              <Link href="">
                 <p className="text-black hover:text-gray-400">Photography</p>
               </Link>
-              <div className={`${toggle1 ? "absolute" : "hidden"} text-center py-6 px-20 my-6 bg-white bg-opacity-75`}>
+              <div
+                className={`${
+                  toggle1 ? "absolute" : "hidden"
+                } text-center py-6 px-20 my-6 bg-white bg-opacity-75`}
+              >
                 <ul className="flex flex-col space-y-2">
                   <li>
-                    <Link href="/works/project"
-                    >
+                    <Link href="/works/project">
                       <p className="text-black hover:text-gray-400">Projects</p>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/works/portraits"
-                    >
-                      <p className="text-black hover:text-gray-400">Portraits</p>
+                    <Link href="/works/portraits">
+                      <p className="text-black hover:text-gray-400">
+                        Portraits
+                      </p>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/about"
-                    >
+                    <Link href="/about">
                       <p className="text-black hover:text-gray-400">Travel</p>
                     </Link>
                   </li>
@@ -309,17 +331,19 @@ const Navbar = () => {
               <Link href="">
                 <p className="text-black hover:text-gray-400">Films</p>
               </Link>
-              <div className={`${toggle2 ? "absolute" : "hidden"} text-center py-6 px-20 my-6 bg-white bg-opacity-75`}>
+              <div
+                className={`${
+                  toggle2 ? "absolute" : "hidden"
+                } text-center py-6 px-20 my-6 bg-white bg-opacity-75`}
+              >
                 <ul className="flex flex-col space-y-2">
                   <li>
-                    <Link href="/films"
-                    >
+                    <Link href="/films">
                       <p className="text-black hover:text-gray-400">Projects</p>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/about"
-                    >
+                    <Link href="/about">
                       <p className="text-black hover:text-gray-400">Travel</p>
                     </Link>
                   </li>
