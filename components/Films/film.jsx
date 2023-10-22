@@ -5,7 +5,7 @@ import GlassmorphicImage from "./ImageComponent";
 const Films = () => {
   return (
     <div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 m-12 md:mx-32 justify-items-center">
+      <div className="grid -z-1 grid-cols-1 lg:grid-cols-2 m-12 md:mx-32 justify-items-center">
         {details.map((detail, index) => (
           <GlassmorphicImage
             index={index}

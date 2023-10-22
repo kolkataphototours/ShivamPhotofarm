@@ -16,7 +16,7 @@ const GlassmorphicImage = ({ index, cla }) => {
       data-aos={`${cla}`}
       data-aos-duration="500"
       href={`/films/${index}`}
-      className="-z-10 relative m-4 w-11/12 h-11/12 shadow-md shadow-gray-500 overflow-hidden"
+      className="relative m-4 w-11/12 h-11/12 shadow-md shadow-gray-500 overflow-hidden"
     >
       <div className=" flex items-center justify-center ">
         <Image

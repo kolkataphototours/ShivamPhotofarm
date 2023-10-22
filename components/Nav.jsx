@@ -89,7 +89,7 @@ const Navbar = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.35 }}
-              className="h-screen bottom-[1px] mx-auto w-full z-10 absolute overflow-hidden bg-opacity-70 backdrop-blur-md backdrop-filter"
+              className="h-screen bottom-[1px] mx-auto w-full  absolute overflow-hidden bg-opacity-70 backdrop-blur-md backdrop-filter"
               style={{
                 backgroundColor: "rgba(0, 0, 0, 0.9)",
               }}
@@ -122,7 +122,7 @@ const Navbar = () => {
                     <motion.div
                       onClick={handleToggle}
                       whileHover={{ scale: 1.1, originX: 0, color: "gray" }}
-                      className="z-10"
+                      className="z-2"
                     >
                       <span className="text-3xl absolute text-white my-2 font-sang">
                         {toggle1 ? "-" : "+"}
@@ -190,7 +190,7 @@ const Navbar = () => {
                       className="md:text-6xl text-white underline underline-offset-8  m-3 font-sang"
                       onClick={handleToggle1}
                     >
-                      Flims
+                      Films
                     </motion.ul>
                     <motion.div
                       onClick={handleToggle1}
@@ -209,7 +209,7 @@ const Navbar = () => {
                         transition={{ duration: 0.6 }}
                         className="mb-5"
                       >
-                        <Link href="/flims">
+                        <Link href="/films">
                           <motion.ul
                             whileHover={{
                               scale: 1.1,
@@ -222,7 +222,7 @@ const Navbar = () => {
                             Projects
                           </motion.ul>
                         </Link>
-                        <Link href="/flims">
+                        <Link href="/films">
                           <motion.ul
                             whileHover={{
                               scale: 1.1,
@@ -291,7 +291,7 @@ const Navbar = () => {
               </Link>
             </motion.div>
             <motion.div
-              className="flex justify-center"
+              className="flex justify-center z-10"
               onHoverStart={handleToggle}
               onHoverEnd={handleToggle}
             >
