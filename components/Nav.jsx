@@ -107,7 +107,7 @@ const Navbar = () => {
                     Home
                   </motion.ul>
                 </Link>
-                <Link href="" className="mb-5">
+                <div className="mb-5">
                   <div className="flex">
                     <motion.ul
                       initial={{ x: "-100vw" }}
@@ -179,8 +179,8 @@ const Navbar = () => {
                       </motion.div>
                     )}
                   </AnimatePresence>
-                </Link>
-                <Link href="" className="mb-5">
+                </div>
+                <div className="mb-5">
                   <div className="flex">
                     <motion.ul
                       initial={{ x: "-100vw" }}
@@ -238,7 +238,7 @@ const Navbar = () => {
                       </motion.div>
                     )}
                   </AnimatePresence>
-                </Link>
+                </div>
                 <Link href="/inspiration" className="mb-5">
                   <motion.ul
                     initial={{ x: "-140vw" }}
